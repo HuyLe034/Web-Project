@@ -5,6 +5,7 @@
 	<title>Shopping Cart</title>
 	<link rel="stylesheet" href="./styles.css">
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
+	<script src="./script.js" async></script>
 </head>
 
 <body>
@@ -15,7 +16,7 @@
 		<div class="container">
 			<div class="navbar">
 				<dir class="logo">
-					<a href="./index.html"><img src="./images/Logo.jpg" width="125px"></a>
+					<a href="./index.html"><img src="./images/Logo.PNG" width="125px"></a>
 				</dir>
 				<nav>
 					<ul>
@@ -26,7 +27,7 @@
 						<li><a href="">About</a></li>
 					</ul>
 				</nav>
-				<a href="./cart.html"><img src="./images/Cart.jpg" width="30px" height="30px"></a>
+				<a href="./cart.html"><img src="./images/Cart.PNG" width="30px" height="30px"></a>
 			</div>
 		</div>
 	</div>
@@ -45,65 +46,61 @@
 				<th>Quantity</th>
 				<th>Subtotal</th>
 			</tr>
-			<tr>
+			<tr class="cart-row">
 				<td>
-					<div class="cart-info">
-						<img src="./images/MAC_988.jpg">
+					<div class="cart-item">
+						<img class="cart-img" src="./images/MAC_988.jpg">
 						<div>
 							<p>MAC 988</p>
-							<small>Price: $0.00</small>
+							<small class="price">Price: $5.99</small>
 							<br>
-							<a href="">Remove</a>
+							<button class="remove-btn">Remove</button>
 						</div>
 					</div>
 				</td>
-				<td><input type="number" value="1"></td>
-				<td>$0.00</td>
+				<td><input class="quantity" type="number" value="1"></td>
+				<td><span class="total-row-price"></span></td>
 			</tr>
-			<tr>
+			<tr class="cart-row">
 				<td>
-					<div class="cart-info">
-						<img src="./images/MAC_988.jpg">
+					<div class="cart-item">
+						<img class="cart-img" src="./images/MAC_988.jpg">
 						<div>
 							<p>MAC 988</p>
-							<small>Price: $0.00</small>
+							<small class="price">Price: $5.99</small>
 							<br>
-							<a href="">Remove</a>
+							<button class="remove-btn">Remove</button>
 						</div>
 					</div>
 				</td>
-				<td><input type="number" value="1"></td>
-				<td>$0.00</td>
+				<td><input class="quantity" type="number" value="1"></td>
+				<td><span class="total-row-price"></span></td>
 			</tr>
-			<tr>
+			<tr class="cart-row">
 				<td>
-					<div class="cart-info">
-						<img src="./images/MAC_988.jpg">
+					<div class="cart-item">
+						<img class="cart-img" src="./images/MAC_988.jpg">
 						<div>
 							<p>MAC 988</p>
-							<small>Price: $0.00</small>
+							<small class="price">Price: $5.99</small>
 							<br>
-							<a href="">Remove</a>
+							<button class="remove-btn">Remove</button>
 						</div>
 					</div>
 				</td>
-				<td><input type="number" value="1"></td>
-				<td>$0.00</td>
+				<td><input class="quantity" type="number" value="1"></td>
+				<td><span class="total-row-price"></span></td>
 			</tr>
 		</table>
 		<div class="total-price">
 			<table>
 				<tr>
-					<td>Subtotal</td>
-					<td>$0.00</td>
+					<td>Total :</td>
+					<td class='final-total'></td>
 				</tr>
 				<tr>
-					<td>Tax</td>
-					<td>$0.00</td>
-				</tr>
-				<tr>
-					<td>Total</td>
-					<td>$0.00</td>
+					<td>VAT Included</td>
+					<td></td>
 				</tr>
 			</table>
 		</div>

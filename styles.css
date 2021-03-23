@@ -42,9 +42,6 @@ h4{
 	color: black;
 	font-weight: normal;
 }
-small{
-	color: #2F343A;
-}
 
 .container{
 	max-width: 1300px;
@@ -178,30 +175,6 @@ small{
 	transform: translateY(0);
 }
 
-.Productlist{
-	padding-top: 100px;
-}
-.Productlist .col-3{
-	text-align: center;
-	padding: 40px 20px;
-	box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
-	cursor: pointer;
-	transition: transform 0.5;
-}
-.Productlist col-3 img{
-	width: 50px;
-	margin-top: 20px;
-	border-radius: 50%;
-}
-.Productlist .col-3:hover{
-	transform: translateY(-10px);
-}
-.Productlist .col-3 h3{
-	font-weight: 600;
-	color: #2F343A;
-	font-size: 16px;
-}
-
 
 
 
@@ -272,7 +245,7 @@ select:focus{
 	outline: none;
 }
 .page-button{
-	margin: 0 auto 80px;
+	margin: 20px auto 80px;
 }
 .page-button span{
 	display: inline-block;
@@ -347,7 +320,7 @@ table{
 	width: 100%;
 	border-collapse: collapse;
 }
-.cart-info{
+.cart-item{
 	display: flex;
 	flex-wrap: wrap;
 }
@@ -391,4 +364,11 @@ td:last-child{
 }
 th:last-child{
 	text-align: right;
+}
+.remove-btn{
+	display:inline-block;
+	background: #2F343A;
+	color: #DDDDDD;
+	padding: 5px 20px;
+	border-radius: 30px;
 }
